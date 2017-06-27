@@ -5,9 +5,15 @@ function handleSubmit(ev){
     const age = f.age.value
     const color = f.color.value
     const stats = document.querySelector("#stats")
-    stats.innerHTML = `<p>${name}, age ${age}, color ${color}</p>`
-    document.querySelector("#stats").style.color = color
-    //stats.innerHTML = name + age
+
+    stats.innerHTML += `<p>${name}, age: ${age}</p>`
+    
+    // const p = document.createElement('p')
+    // p.textContext = `${name}, age ${age}, color ${color}`
+    // stats.appendChild(p)
+
+    stats.style.color = color
+
 }
 
 const personForm = document.querySelector("#person-form")
