@@ -9,7 +9,6 @@ function handleSubmit(ev){
 }
 
 function renderColor(color){
-    const colorItem = document.createElement('li')
     const colorDiv  = document.createElement('div')
     colorDiv.style.backgroundColor = color
     colorDiv.style.width = '6rem'
